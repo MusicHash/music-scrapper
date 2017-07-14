@@ -1,2 +1,2 @@
-# beatport-api
-2
+# music-scrapper
+renamed :)

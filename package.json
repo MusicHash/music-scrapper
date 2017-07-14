@@ -1,17 +1,17 @@
 {
-  "name": "beatport-api",
+  "name": "music-scrapper",
   "version": "0.0.1",
   "description": "## What is it?",
   "main": "index.js",
   "bin": {
-    "beatport-api": "./repl.js"
+    "music-scrapper": "./repl.js"
   },
   "engines": {
     "node": ">= v6.9.10"
   },
   "scripts": {
     "lint": "eslint src",
-    "test": "eslint src && mocha --require ./tests/testing_utils/init.js --compilers js:babel-register --recursive ./tests",
+    "test": "mocha --require ./tests/testing_utils/init.js --compilers js:babel-register --recursive ./tests",
     "test:coverage": "cross-env NODE_ENV=test nyc mocha --recursive ./tests",
     "packages": "node_modules/.bin/ncu -u",
     "repl": "./repl.js --local"
@@ -63,10 +63,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MusicHash/beatport-api.git"
+    "url": "git+https://github.com/MusicHash/music-scrapper.git"
   },
   "bugs": {
-    "url": "https://github.com/MusicHash/beatport-api/issues"
+    "url": "https://github.com/MusicHash/music-scrapper/issues"
   },
-  "homepage": "https://github.com/MusicHash/beatport-api#readme"
+  "homepage": "https://github.com/MusicHash/music-scrapper#readme"
 }
