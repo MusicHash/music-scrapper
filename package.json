@@ -12,7 +12,7 @@
   "scripts": {
     "lint": "eslint src",
     "test": "mocha --require ./tests/testing_utils/init.js --compilers js:babel-register --recursive ./tests",
-    "test:coverage": "cross-env NODE_ENV=test nyc mocha --recursive ./tests",
+    "test:coverage": "cross-env NODE_ENV=test nyc mocha --recursive ./tests/**/*.spec.js",
     "packages": "node_modules/.bin/ncu -u",
     "repl": "./repl.js --local"
   },
